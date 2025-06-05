@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheasashri Murthy | French Specialist</title>
     <style>
-        /* Global Styles */
+        /* Global Styles - France Flag Colors */
         :root {
-            --primary-color: #e63946;
+            --france-blue: #0055A4;
+            --france-white: #FFFFFF;
+            --france-red: #EF4135;
             --dark-color: #1d3557;
-            --light-color: #f1faee;
-            --accent-color: #a8dadc;
+            --light-color: #f8f9fa;
             --text-color: #333;
         }
         
@@ -35,7 +36,7 @@
         
         /* Header & Navigation */
         header {
-            background-color: white;
+            background-color: var(--france-white);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
@@ -54,7 +55,7 @@
             display: flex;
             align-items: center;
             font-weight: bold;
-            color: var(--primary-color);
+            color: var(--france-blue);
             text-decoration: none;
             font-size: 1.5rem;
         }
@@ -62,13 +63,13 @@
         .logo-icon {
             width: 40px;
             height: 40px;
-            background-color: var(--primary-color);
+            background-color: var(--france-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 10px;
-            color: white;
+            color: var(--france-white);
             font-weight: bold;
             font-size: 1.2rem;
         }
@@ -92,7 +93,7 @@
         }
         
         nav ul li a:hover {
-            color: var(--primary-color);
+            color: var(--france-red);
         }
         
         nav ul li a::after {
@@ -100,7 +101,7 @@
             position: absolute;
             width: 0;
             height: 2px;
-            background-color: var(--primary-color);
+            background-color: var(--france-red);
             bottom: 0;
             left: 0;
             transition: width 0.3s;
@@ -115,7 +116,7 @@
             height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(241, 250, 238, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(0, 85, 164, 0.1) 0%, rgba(239, 65, 53, 0.1) 100%);
             padding-top: 80px;
         }
         
@@ -139,16 +140,18 @@
             max-width: 100%;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 5px solid var(--france-white);
+            outline: 1px solid var(--france-blue);
         }
         
         h1 {
             font-size: 3rem;
             margin-bottom: 20px;
-            color: var(--dark-color);
+            color: var(--france-blue);
         }
         
         .highlight {
-            color: var(--primary-color);
+            color: var(--france-red);
         }
         
         .subtitle {
@@ -159,29 +162,30 @@
         
         .btn {
             display: inline-block;
-            background-color: var(--primary-color);
+            background-color: var(--france-blue);
             color: white;
             padding: 12px 30px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s;
-            border: 2px solid var(--primary-color);
+            border: 2px solid var(--france-blue);
         }
         
         .btn:hover {
             background-color: transparent;
-            color: var(--primary-color);
+            color: var(--france-blue);
         }
         
         .btn-outline {
             background-color: transparent;
-            color: var(--primary-color);
+            color: var(--france-blue);
             margin-left: 15px;
+            border: 2px solid var(--france-blue);
         }
         
         .btn-outline:hover {
-            background-color: var(--primary-color);
+            background-color: var(--france-blue);
             color: white;
         }
         
@@ -198,7 +202,7 @@
         
         .section-title h2 {
             font-size: 2.5rem;
-            color: var(--dark-color);
+            color: var(--france-blue);
             display: inline-block;
             position: relative;
         }
@@ -208,7 +212,7 @@
             position: absolute;
             width: 50%;
             height: 4px;
-            background-color: var(--primary-color);
+            background: linear-gradient(90deg, var(--france-blue) 0%, var(--france-white) 50%, var(--france-red) 100%);
             bottom: -10px;
             left: 25%;
         }
@@ -232,6 +236,8 @@
             max-width: 100%;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 5px solid var(--france-white);
+            outline: 1px solid var(--france-red);
         }
         
         .skills {
@@ -244,7 +250,7 @@
         
         .skill-category h4 {
             margin-bottom: 10px;
-            color: var(--primary-color);
+            color: var(--france-blue);
         }
         
         .skill-tags {
@@ -254,10 +260,11 @@
         }
         
         .skill-tag {
-            background-color: var(--accent-color);
+            background-color: rgba(0, 85, 164, 0.1);
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.9rem;
+            border: 1px solid rgba(0, 85, 164, 0.2);
         }
         
         /* Experience Section */
@@ -271,7 +278,7 @@
             content: '';
             position: absolute;
             width: 2px;
-            background-color: var(--primary-color);
+            background: linear-gradient(to bottom, var(--france-blue) 0%, var(--france-red) 100%);
             top: 0;
             bottom: 0;
             left: 50%;
@@ -299,6 +306,7 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             position: relative;
+            border-left: 4px solid var(--france-blue);
         }
         
         .timeline-content::after {
@@ -307,7 +315,7 @@
             width: 20px;
             height: 20px;
             background-color: white;
-            border: 3px solid var(--primary-color);
+            border: 3px solid var(--france-red);
             border-radius: 50%;
             top: 30px;
         }
@@ -321,7 +329,7 @@
         }
         
         .timeline-date {
-            color: var(--primary-color);
+            color: var(--france-red);
             font-weight: bold;
             margin-bottom: 10px;
         }
@@ -329,7 +337,7 @@
         .timeline-title {
             font-size: 1.2rem;
             margin-bottom: 10px;
-            color: var(--dark-color);
+            color: var(--france-blue);
         }
         
         .timeline-company {
@@ -351,6 +359,8 @@
             padding: 30px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
+            border-top: 4px solid var(--france-blue);
+            border-bottom: 4px solid var(--france-red);
         }
         
         .education-card:hover {
@@ -360,12 +370,12 @@
         .education-degree {
             font-size: 1.2rem;
             margin-bottom: 10px;
-            color: var(--dark-color);
+            color: var(--france-blue);
         }
         
         .education-school {
             font-weight: 500;
-            color: var(--primary-color);
+            color: var(--france-red);
             margin-bottom: 15px;
         }
         
@@ -377,6 +387,7 @@
         
         .education-grade {
             font-weight: bold;
+            color: var(--france-blue);
         }
         
         /* Certifications Section */
@@ -391,43 +402,44 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid var(--primary-color);
+            border-left: 4px solid var(--france-blue);
+            border-right: 4px solid var(--france-red);
         }
         
         .cert-title {
             font-size: 1.1rem;
             margin-bottom: 10px;
-            color: var(--dark-color);
+            color: var(--france-blue);
         }
         
         .cert-org {
-            color: var(--primary-color);
+            color: var(--france-red);
             font-size: 0.9rem;
         }
-       
-
-    .certificate-btn {
-        background-color: #e63946; /* Red color */
-        color: white;
-        border: none;
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-size: 0.9rem;
-        margin-top: 10px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: inline-block;
-    }
-    
-    .certificate-btn:hover {
-        background-color: #c1121f; /* Darker red on hover */
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+        
+        .certificate-btn {
+            background-color: var(--france-blue);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .certificate-btn:hover {
+            background-color: var(--france-red);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
         /* Contact Section */
         .contact {
-            background: linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(241, 250, 238, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(0, 85, 164, 0.1) 0%, rgba(239, 65, 53, 0.1) 100%);
         }
         
         .contact-container {
@@ -452,7 +464,7 @@
         .contact-icon {
             width: 50px;
             height: 50px;
-            background-color: var(--primary-color);
+            background-color: var(--france-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -464,7 +476,7 @@
         
         .contact-details h4 {
             margin-bottom: 5px;
-            color: var(--dark-color);
+            color: var(--france-blue);
         }
         
         .form-group {
@@ -486,7 +498,7 @@
         
         /* Footer */
         footer {
-            background-color: var(--dark-color);
+            background-color: var(--france-blue);
             color: white;
             text-align: center;
             padding: 30px 0;
@@ -500,7 +512,7 @@
             display: inline-block;
             width: 40px;
             height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.2);
             border-radius: 50%;
             margin: 0 10px;
             color: white;
@@ -509,7 +521,7 @@
         }
         
         .social-links a:hover {
-            background-color: var(--primary-color);
+            background-color: var(--france-red);
             transform: translateY(-5px);
         }
         
@@ -599,9 +611,8 @@
                     <a href="#about" class="btn btn-outline">Learn More</a>
                 </div>
             </div>
-           <div class="hero-image">
-    <img src="IMG_20231127_155322 (1).jpg" alt="Sheasashri Murthy" style="width: 350px; height: 350px; object-fit: cover; border-radius: 20px;">
-</div>
+            <div class="hero-image">
+                <img src="IMG_20231127_155322 (1).jpg" alt="Sheasashri Murthy" style="width: 350px; height: 350px; object-fit: cover; border-radius: 20px;">
             </div>
         </div>
     </section>
@@ -650,8 +661,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-    <img src="IMG_20231127_155322 (1).jpg" alt="Sheasashri Murthy" style="width: 300px; height: 400px; object-fit: cover; border-radius: 10px;">
-</div>
+                    <img src="IMG_20231127_155322 (1).jpg" alt="Sheasashri Murthy" style="width: 300px; height: 400px; object-fit: cover; border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -731,43 +741,43 @@
                 <div class="cert-card">
                     <h3 class="cert-title">DELF B2</h3>
                     <p class="cert-org">Alliance Française de Bangalore</p>
-                    <a href="https://learn.microsoft.com/api/achievements/share/en-us/THOUBICIMRAN-5051/NV2NA4MF?sharingId=409C126B9FFA4299" target="_blank" class="certificate-btn">View Certificate</a>
+                    <a href="paste the link of the certificate" target="_blank" class="certificate-btn">View Certificate</a>
                 </div>
                 
                 <div class="cert-card">
                     <h3 class="cert-title">DELF B1</h3>
                     <p class="cert-org">Alliance Française de Bangalore</p>
-                    <a href="" target="_blank" class="cert-view-btn">View Certificate</a>
+                    <a href="" target="_blank" class="certificate-btn">View Certificate</a>
                 </div>
                 
                 <div class="cert-card">
                     <h3 class="cert-title">DELF A2</h3>
                     <p class="cert-org">Alliance Française de Pondichéry</p>
-                    <a href="paste the link of the certificate" target="_blank" class="cert-view-btn">View Certificate</a>
+                    <a href="paste the link of the certificate" target="_blank" class="certificate-btn">View Certificate</a>
                 </div>
                 
                 <div class="cert-card">
                     <h3 class="cert-title">DELF A1</h3>
                     <p class="cert-org">Alliance Française de Pondichéry</p>
-                    <a href="" target="_blank" class="cert-view-btn">View Certificate</a>
+                    <a href="paste the link of the certificate" target="_blank" class="certificate-btn">View Certificate</a>
                 </div>
                 
                 <div class="cert-card">
                     <h3 class="cert-title">JIRA Service Management Fundamentals</h3>
                     <p class="cert-org">Atlassian</p>
-                    <a href="" target="_blank" class="cert-view-btn">View Certificate</a>
+                    <a href="paste the link of the certificate" target="_blank" class="certificate-btn">View Certificate</a>
                 </div>
                 
                 <div class="cert-card">
                     <h3 class="cert-title">Active Directory on Windows Server</h3>
                     <p class="cert-org">Udemy</p>
-                    <a href="" target="_blank" class="cert-view-btn">View Certificate</a>
+                    <a href="paste the link of the certificate" target="_blank" class="certificate-btn">View Certificate</a>
                 </div>
                 
                 <div class="cert-card">
                     <h3 class="cert-title">Bronze Accolade Award</h3>
                     <p class="cert-org">Atos Syntel</p>
-                    <a href="" target="_blank" class="cert-view-btn">View Certificate</a>
+                    <a href="paste the link of the certificate" target="_blank" class="certificate-btn">View Certificate</a>
                 </div>
             </div>
         </div>
